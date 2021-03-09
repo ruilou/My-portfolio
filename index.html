@@ -1,4 +1,7 @@
+
 <!DOCTYPE html>
+<?php if($_POST["message"]) {mail("ruilouoo@gmail.com", "Hello%20there"$_POST["insert your message here"]. "From: an@email.address");}
+?>
 <html>
  <head>
   <meta charset="utf-8">
@@ -40,12 +43,19 @@
       <h2>Contact Me</h2>
       <a href="https://github.com/ruilou">Find me on GitHub</a>
       <br>
-      <a href="https://linkedin.com.in/ruilou">Find me on Linkedin</a>
+      <a href="https://www.linkedin.com/in/ruilou">Find me on Linkedin</a>
+       <form action=”mailto:contact@yourdomain.com”method=”POST”enctype=”multipart/form-data”name=”EmailForm”>Name:<br><input type=”text” size=”19″ name=”ContactName”>
+    <br>Message:<br> <textarea name="message"></textarea>
+    <form method="post" action="subscriberform.php"><br>
+    <input type="submit">
+    </form>
     </section>
   </div>
   </main>
   <footer>
-    <div><a href="mailto:ruilouoo@gmail.com? &subject=Hello%20there! &body=Please%20leave%20me%20a%20message!">Email Me</a>
+    <div>
+      <a href="mailto:ruilouoo@gmail.com? &subject=Hello%20there! &body=Please%20leave%20me%20a%20message!">Email Me</a>
+   
     </div>
   </footer>
  <script src="script.js"></script>
